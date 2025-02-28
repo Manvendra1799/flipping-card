@@ -1,0 +1,21 @@
+
+STEP 1:- How to make gradient balls and make it to move?
+
+keyPoints:-
+
+  section->html
+  linear-gradient() ??
+  transform : translate(); ??
+  background-image: linear-gradient(); ??
+  pseudo-elements: ::after ::before ??
+
+STEP 2:- How to make card-front-face?
+
+ keyPoints :-
+  #glassUi card
+  
+  background : rgba(transparent white) ??
+  box-shadow :  horizontal vertical blur-radius rgba(); ??
+  backdrop-filter : blur() ??
+  
+ 

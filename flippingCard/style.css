@@ -1,0 +1,138 @@
+/* link google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* section styling */
+section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16, 15, 15);
+    overflow: hidden; /* Prevents overflow from pseudo-elements */
+}
+
+/*Gradient balls */
+section::before {
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-530px,-450px);
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    background: linear-gradient(purple, pink);
+    z-index: 1;
+}
+
+
+section::after {
+    content: '';
+    position: absolute;
+    top: 50%;                       
+    left: 50%;
+    transform: translate(100px, 50px);
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    background: linear-gradient(purple, pink);
+    z-index: 1;
+  
+}
+/*Container of the card*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 450px;
+    width: 700px;
+    background: rgba(255, 255, 255, 0.1); /* More transparent for better effect */
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5); /* Shadow with 50% transparency */
+    backdrop-filter: blur(25px); /* Blur effect */
+    border-radius: 50px; /* Rounded corners */
+    padding: 20px; /* Add some padding */
+    z-index: 2;
+    border: none;
+    position: relative; /* Ensures it stays above pseudo-elements */
+}
+
+/* Front Face of the card */
+.front-face {
+    color: white; /* Example: White text */
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    justify-content: space-between;
+
+   
+}
+
+/* Upper Section Styling */
+.upperSection{
+    display: flex;
+    justify-content:space-between;
+
+  }
+/* UpperSection Logo-section & name styling */
+  .upperSection .logo-section{
+    display:flex;
+    gap:30px;
+    align-items:center;
+   }
+
+  .upperSection h1{
+    font-size: 27px;
+    font-weight: 600;
+  }
+
+  /* Card-Number Styling */
+  .card-number{
+    margin-top:90px;
+     }
+
+     /*Card-Number-details h2 styling*/
+     .Card-Number-details h2{
+        font-size: 24px;
+        font-weight: 400;
+     }
+
+     /*Card-Number-details h3 styling  */
+     .Card-Number-details h3{
+        font-size: 27px;
+         letter-spacing: 2px;
+        font-weight: 400;
+     }
+     /*card-Holder Styling */
+     .card-Holder{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-top:50px;
+     }
+
+    .Card-holder-Name h4{
+        font-size: 27px;
+        font-weight: 400;
+    }
+
+    .Card-expiry h5{
+        font-size:15px;
+        font-weight: 300;
+    }
+    
+    .Card-expiry h6{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    
